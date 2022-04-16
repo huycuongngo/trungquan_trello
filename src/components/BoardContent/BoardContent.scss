@@ -1,0 +1,24 @@
+
+@import '_setting.scss';
+
+$card-border-radius: 4px;
+
+
+$list-bg-color: #ebecf0;
+$common-element-bg: rgba(255,255,255, 0.24);
+
+.board-content {
+  display: flex;
+  margin: $gap;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 11px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $common-element-bg;
+    border-radius: 8px;
+  }
+}
